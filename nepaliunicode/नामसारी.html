@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>नामसारी</title>
+    <style type="text/css">
+        table,
+        th,
+        td {
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: 20px;
+            border: 1px solid black;
+        }
+        #formcontent2 {
+            size: 7in 9.25in;width:692px;
+            height:auto;
+            margin: 27mm 39mm 27mm 39mm;
+            padding:8px;
+            border: 2px #242323 solid;
+        }
+        .print-head {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            text-transform: uppercase;
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+
+        .print-content {
+            margin-top: 45px;
+        }
+
+        .print-content>div>span {
+            color: #000;
+        }
+
+        .print-row {
+            display: flex;
+            flex-direction: row;
+            justify-content: justify;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+            font-weight: 600;
+        }
+
+        .print-row span {
+            font-size: 0.8em;
+            text-transform: uppercase;
+        }
+
+        .line,
+        .line1,
+        .line2,
+        .line3,
+        .line4,
+        .line5,
+        .line6,
+        .line7,
+        .line8,
+        .line9 {
+            border-bottom: 1px #0a0a0a solid;
+            text-transform: none;
+            color: #000;
+        }
+
+        .line1 {
+            width: 26%;
+        }
+
+        .line2 {
+            width: 27.5%;
+        }
+
+        .line3 {
+            width: 31%;
+        }
+
+        .line4 {
+            width: 18%
+        }
+
+        .line5 {
+            width: 21%;
+        }
+
+        .line6 {
+            width: 19%;
+        }
+
+        .line7 {
+            width: 30%;
+        }
+
+        .line8 {
+            width: 25%;
+        }
+
+        .line9 {
+            width: 40%;
+        }
+
+        .print-heading>span {
+            color: #000;
+        }
+
+        .fifth .col {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .fifth .col .line {
+            margin-bottom: 10px;
+        }
+
+        tbody tr td {
+            height: 30px;
+        }
+
+        .fifth .col span {
+            margin-bottom: 5px;
+        }
+
+        .third {
+            width: 100%;
+            height: 430px;
+        }
+
+        th,
+        td {
+            font-size: 0.9em;
+            ;
+        }
+
+        .text-vertical {
+            text-orientation: mixed;
+            writing-mode: vertical-lr;
+        }
+
+        .text-align-left {
+            text-align: left;
+            padding-left: 2px;
+        }
+
+        .text-vertical {
+            text-orientation: mixed;
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+            padding-top: 5px;
+            text-align: center;
+            vertical-align: bottom;
+        }
+
+        .text-align-left {
+            text-align: start;
+            padding-left: 0px;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .print-heading>span {
+            color: #000;
+        }
+
+        .print-content>div>span {
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="formcontent2" style="size: 7in 9.25in;width:708px;margin: 27mm 39mm 27mm 39mm;">
+        <div class="print-head">
+            <div>
+                <img src="%E0%A4%A8%E0%A4%BE%E0%A4%AE%E0%A4%B8%E0%A4%BE%E0%A4%B0%E0%A5%80_files/logo.svg"
+                    style="width: 220px; height: 110px;margin:0 80px 0 39px" alt="logo" class="col image">
+            </div>
+
+            <div style="display: flex; flex-direction: column;align-items: center;justify-content: space-between; padding-right: 120px;"
+                class="col print-heading">
+                <span style="font-weight: bold;">नेपाल सरकार</span>
+                <span style="font-weight: bold;">भूमि व्यवस्था सरकारी तथा गरिवी निवारण मन्त्रलय</span>
+                <span style="font-weight: bold;">भूमि व्यवस्थापन तथा अभिलेख विभाग</span>
+                <span style="font-size:1.8em;font-family:ArialNarprint-row2;font-weight: bold;">मालपोत कार्यालय</span>
+                <span style="font-size:1.4em;font-family:ArialNarprint-row2;font-weight: bold;">साँखु (काठमाण्डौ)</span>
+                <br>
+                <br>
+
+
+            </div>
+        </div>
+        <div class="date" style="display:flex; flex-direction: row;justify-content: space-between;">
+            <div><span> मिसिल नं.: <span class="line2" id="misil"></span></span></div>
+            <div><span> मिति: <span class="line2" id="miti"></span></span></div>
+
+        </div>
+        <div>
+            <span
+                style="font-size:1.1em;font-family:ArialNarprint-row2;margin-left:-40px;display: flex; flex-direction: column;align-items: center;justify-content: space-between; margin-top: 30px; font-weight: bold;">
+                <u> विषय :- नामसारीको टिप्पणी र आदेश</u> </span>
+        </div>
+
+        <div class="print-content" style=" margin-bottom: 40px;text-align: justify;">
+
+            <span style="float: left;">श्रीमान्,</span>
+
+
+            <span>मेरो / हाम्रो नातेदारका नाम मा दर्ता रहेको तपसिलका विवरन अनुसारको जग्गा निज परलोक हुनु भएकोले निम्न
+                प्रमानहरुको आधारमा निजको </span>
+
+
+            <span>नामबाट मेरो/हाम्रो नाममा एकलौटी/संयुक्त नामसारी गरी पाउँ भनी द.नं </span>
+            <span class="line1" id="dana"></span>
+            <span>मिति</span>
+            <span class="line6" id="miti2"></span>
+
+
+
+            <span>मा निवेदन गरेको।</span>
+
+        </div>
+
+        <div class="third">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>निवेदकको नाम, थर, वतन (वारेस भए निजको समेत)</th>
+                        <th>नागरिकता नं.</th>
+                        <th>पिता </th>
+                        <th>पति </th>
+                        <th>बाजे </th>
+                        <th>कैफियत</th>
+                    </tr>
+                </thead>
+                <tbody style="height: 40px;">
+                    <tr>
+                        <td id="naam"></td>
+                        <td class="text-align-left" id="naam2"> </td>
+                        <td id="naam3"> </td>
+                        <td id="naam4"> </td>
+                        <td id="naam5"> </td>
+                        <td id="naam6"> </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th><span>मृतक दर्तावालाको नाम, थर, वतन </span></th>
+                        <th><span>जग्गा रहेको गा.वि.स / न.पा </span></th>
+                        <th>वडा नं.</th>
+                        <th><span>कित्ता नं.</span></th>
+                        <th> <span>क्षत्रफल</span></th>
+                        <th> <span>मृतकसंगको नाता </span></th>
+                        <th> <span>मिति </span></th>
+                    </tr>
+                </thead>
+                <tbody style="height: 40px;">
+                    <tr>
+                        <td id="naam7"></td>
+                        <td id="naam8"></td>
+                        <td id="wada"></td>
+                        <td id="kitta"> </td>
+                        <td id="chhetrafal"> </td>
+                        <td id="nata"></td>
+                        <td id="miti3"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="print-row">
+                <span>संलग्न प्रमाणहरु :</span>
+            </div>
+            <div class="print-row">
+                <span>क) च .नं. </span> <span class="line4" id="chana"></span>
+                <span> मिति </span> <span class="line4" id="miti4"></span>
+                <span>को न.पा / गा. वि. स.</span> <span class="line1" id="napa"></span><span>वडा नं </span>
+            </div>
+            <div class="print-row">
+                <span class="line1" id="wada2"></span>
+                <span> को सिफारिस ।</span>
+            </div>
+            <div class="print-row">
+                <span>ख) च .नं. </span> <span class="line4" id="chana2"></span>
+                <span> मिति </span> <span class="line4" id="miti5"></span>
+                <span>को न.पा / गा. वि. स.</span> <span class="line1" id="gawisa"></span>
+                <span>को नाता </span>
+            </div>
+            <div class="print-row">
+                <span>प्रमाणित प्रमाण पत्र ।</span>
+            </div>
+
+
+
+
+        </div>
+    </div>
+</body>
+
+</html>

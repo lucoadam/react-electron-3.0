@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" print-content="text/html; charset=UTF-8">
+
+    <title>किताकाट</title>
+    <style type="text/css">
+        body {
+            width: 100vw;
+            /*display: flex;*/
+
+        }
+
+        #formcontent4 {
+            width: 7in;
+            height: 9.25in;
+            margin: 27mm 39mm 27mm 39mm;
+            padding:8px;
+            border: 2px #242323 solid;
+        }
+
+        .print-head {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            text-transform: uppercase;
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+
+        .print-content {
+            margin-top: 45px;
+        }
+
+        .print-content>div>span {
+            color: #000;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            justify-content: justify;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+            font-weight: 600;
+        }
+
+        .row span {
+            font-size: 0.8em;
+            text-transform: uppercase;
+        }
+
+        .line,
+        .line1,
+        .line2,
+        .line22,
+        .line3,
+        .line4,
+        .line5,
+        .line6,
+        .line7,
+        .line8,
+        .line9 {
+            border-bottom: 1px #0a0a0a solid;
+            text-transform: none;
+            color: #000;
+        }
+
+        .line1 {
+            width: 50%;
+        }
+
+        .line2 {
+            width: 27%;
+        }
+
+        .line22 {
+            width: 34%;
+        }
+
+        .line3 {
+            width: 31%;
+        }
+
+        .line4 {
+            width: 25%;
+        }
+
+        .line5 {
+            width: 27%;
+        }
+
+        .line6 {
+            width: 51%;
+        }
+
+        .line7 {
+            width: 39%;
+        }
+
+
+        .heading>span {
+            color: #000;
+        }
+
+        .fifth .col {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .fifth .col .line {
+            margin-bottom: 10px;
+        }
+
+        .fifth .col span {
+            margin-bottom: 5px;
+        }
+
+        .table {
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .table-bordered {
+            border: 1px solid black;
+        }
+
+        .table>tbody+tbody {
+            border-top: 2px solid black;
+        }
+
+        .table>thead>tr>th,
+        .table>tbody>tr>th,
+        .table>tfoot>tr>th,
+        .table>thead>tr>td,
+        .table>tbody>tr>td,
+        .table>tfoot>tr>td {
+            padding: 15px;
+            /*line-height: 1.42857143;*/
+            vertical-align: top;
+            border-top: 1px solid black;
+        }
+
+        .table>thead>tr>th {
+            vertical-align: bottom;
+            border-bottom: 1px solid black;
+        }
+
+        .table-bordered>thead>tr>th,
+        .table-bordered>tbody>tr>th,
+        .table-bordered>tfoot>tr>th,
+        .table-bordered>thead>tr>td,
+        .table-bordered>tbody>tr>td,
+        .table-bordered>tfoot>tr>td {
+            border: 1px solid black;
+        }
+
+        table {
+            border-spacing: unset;
+        }
+
+        table col[class*="col-"] {
+            position: static;
+            display: table-column;
+            float: none;
+        }
+
+        table td[class*="col-"],
+        table th[class*="col-"] {
+            position: static;
+            display: table-cell;
+            float: none;
+        }
+
+        .table>caption+thead>tr:first-child>th,
+        .table>colgroup+thead>tr:first-child>th,
+        .table>thead:first-child>tr:first-child>th,
+        .table>caption+thead>tr:first-child>td,
+        .table>colgroup+thead>tr:first-child>td,
+        .table>thead:first-child>tr:first-child>td {
+            border-top: 0;
+        }
+
+        .table>tbody+tbody {
+            border-top: 2px solid #ddd;
+        }
+
+        .no-border-top {
+            border-top: unset !important;
+        }
+
+        .table>thead>tr:first-child>th {
+            border-bottom: unset !important;
+        }
+
+        th,
+        td {
+            font-size: 0.9em;
+            ;
+        }
+
+        .text-vertical {
+            text-orientation: mixed;
+            writing-mode: vertical-lr;
+        }
+
+        .text-align-left {
+            text-align: left;
+            padding-left: 2px;
+        }
+
+        /* Second Table */
+        .table1 {
+            width: 100%;
+            max-width: 100%;
+            height: fit-print-content;
+        }
+
+        .table1-bordered {
+            border: 2px solid #000;
+        }
+
+        .table1>thead>tr>th,
+        .table1>tbody>tr>th,
+        .table1>tfoot>tr>th,
+        .table1>thead>tr>td,
+        .table1>tbody>tr>td {
+            border-right: 2px solid #000;
+        }
+
+        .table1>thead>tr>th {
+            vertical-align: bottom;
+            border-bottom: 2px solid #000;
+        }
+
+        .table1-bordered>tbody>tr>th {
+            border: 2px solid #000;
+            /*border-bottom: 1px solid black;*/
+        }
+
+        .table1-bordered>tbody>tr>td {
+            text-align: center;
+            padding-bottom: 5px;
+
+        }
+
+        .table1-bordered>tbody>tr :first-child {
+            padding-left: 0px;
+            text-align: center;
+        }
+
+        .table1-bordered>thead>tr>th,
+        .table1-bordered>thead>tr>td {
+            border-bottom-width: 1px;
+        }
+
+        .table1 {
+            border-spacing: unset;
+        }
+
+
+
+        .table1>caption+thead>tr:first-child>th,
+        .table1>colgroup+thead>tr:first-child>th,
+        .table1>thead:first-child>tr:first-child>th,
+        .table1>caption+thead>tr:first-child>td,
+        .table1>colgroup+thead>tr:first-child>td,
+        .table1>thead:first-child>tr:first-child>td {
+            border-top: 0;
+        }
+
+        .table1>tbody+tbody {
+            border-top: 1px solid #ddd;
+        }
+
+        .no-border-top {
+            border-top: unset !important;
+        }
+
+        .table1>thead>tr:first-child>th {
+            border-bottom: unset !important;
+        }
+
+        th,
+        td {
+            font-size: 0.9em;
+        }
+
+        .table1-bordered>tbody :last-child>td {
+            line-height: 20px;
+        }
+
+        .text-vertical {
+            text-orientation: mixed;
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+            padding-top: 5px;
+            text-align: center;
+            vertical-align: bottom;
+        }
+
+        .text-align-left {
+            text-align: start;
+            padding-left: 0px;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .table1>thead>tr>th,
+        .table1>thead>tr>th>span {
+            font-size: 0.9em;
+        }
+
+        .table1>tbody>tr :last-child,
+        .table1>thead>tr :last-child {
+            border-right: none;
+        }
+
+        .heading>span {
+            color: #000;
+        }
+
+        .print-content>div>span {
+            color: #000;
+        }
+
+        .table1>thead>tr>th>span,
+        .table1>thead>tr>th {
+            color: #000;
+        }
+
+        .table1>tbody>tr>td {
+            text-align: center;
+            border-bottom: 1px solid #000;
+        }
+
+        .table1>tbody>tr :last-child {
+            border-bottom: none;
+        }
+
+        .table1>tbody>tr>td {
+            /* font-size: 12px; */
+            font-size: 0.9em;
+            /* justify-content: center; */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="formcontent4">
+            <div class="print-head">
+                    <img src="./ट्रायल_files/logo.svg"
+                        style="width: 120px; height: 110px; /*! float: left; */ /*! padding-top: 50px; */padding-right: 80px;"
+                        alt="logo" class="col image">
+                    <div style="margin-left:-40px;display: flex; flex-direction: column;align-items: center;justify-content: space-between; padding-right: 150px;"
+                        class="col heading">
+                        <span style="font-weight: bold;">नेपाल सरकार</span>
+                        <span style="font-weight: bold;">भूमि व्यवस्था सरकारी तथा गरिवी निवारण मन्त्रलय</span>
+                        <span style="font-weight: bold;">भूमि व्यवस्थापन तथा अभिलेख विभाग</span>
+                        <span style="font-size:1.8em;font-family:ArialNarrow2;font-weight: bold;">मालपोत कार्यालय</span>
+                        <span style="font-size:1.4em;font-family:ArialNarrow2;font-weight: bold;">साँखु (काठमाण्डौ)</span>
+                        <br>
+                        <br>
+                        <!-- <div class="extra">
+                            <div class="rightmiti" style="position: absolute;  left:550px;"><span> मिति: <span class="line2"
+                                        id="miti"></span></span></div><br>
+                            <span style="position: relative; left:20px;"> पत्र संख्या :- <span class="line2"
+                                    id="patra"></span></span> <br>
+                            <span style="position: relative; left:20px;"> चलानी नं :- <span class="line2" id="chalani"></span>
+                            </span> <br> <br> <br>
+                            <span style="position: relative; left:65px; padding:10px;font-weight: bolder"> श्रीमान् नापि अधिकृत ज्यु
+                            </span>
+                            <span style="position: relative; left:65px; padding:30px;"> नापी कार्यालय, <br>
+                                साँखु, काठमाडौँ
+                            </span>
+                        </div><br><br>
+                        <span
+                            style="font-size:1.1em;font-family:ArialNarrow2;margin-left:-40px;display: flex; flex-direction: column;align-items: center;justify-content: space-between; margin-top: 70px; font-weight: bold;">
+                            <u> विषय :- किताकाट गरि पठाइदिनू हुन । </u> </span> -->
+                    </div>
+                </div>
+                <div class="extra">
+                        <div style="display:flex; flex-direction: row;justify-content: space-between;">
+                            <div> पत्र संख्या :- <span class="line2" id="patra"></span></div>
+                            <div> मिति: <span class="line2"></span></div>
+            
+                        </div>
+                        <div style="text-align:left;">
+                            <span> चलानी नं :- <span class="line2"></span>
+                            </span>
+                        </div>
+                        <div style="text-align:left;padding-top:0.2in">
+                            <span style="padding-left:30px;">
+                                श्री नापी कार्यालय, </span><br>
+                            <span style="padding-left:30px;"> साँखु, काठमाडौँ
+            
+                            </span>
+                        </div>
+            
+                    </div>
+                    <div
+                        style="font-size:1.1em;font-family:ArialNarrow2;display: flex; flex-direction: column;align-items: center;justify-print-content: space-between; margin-top: 70px; font-weight: bold;">
+                        <u> विषय :- ट्रा. चे. गरी पठाइदिने </u> </div>
+                <div class="print-content" style=" margin-bottom: 40px">
+                    <div class="row">
+                        <span>प्रस्तुत विषयमा</span>
+                        <span class="line1" id="jilla"></span>
+                        <span>को मिति</span>
+                        <span class="line2" id="wada"></span>
+                        <span>च.नं</span>
+                    </div>
+                    <div class="row">
+            
+                        <span class="line4" id="kina"></span> <span>मुद्धा नं</span><span class="line5" id="naam"></span>
+                        <span>वादी</span> <span class="line22" id="dana"></span> <span>तथा
+                        </span>
+                    </div>
+                    <div class="row">
+                        <span class="line7" id="miti2"></span>
+                        <span>भएको दाखिल खारेज सम्बन्धि विषयमा देहाय बमोजिम क्रिताकाट गरि टेश </span>
+                    </div>
+                    <div class="row">
+                        <span>उतार सहित संलग्न गरि पडाइदिनु हुन अनुरोध छ।</span>
+                        <br> <br> <br>
+                    </div>
+                    <div class="third">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th> नाम, थर</th>
+                                    <th>नागरिकता नं </th>
+                                    <th>जरी मिति </th>
+                                    <th> जारी जिल्ला </th>
+                                    <th> बाबु / पतिको नाम</th>
+                                    <th>बाजे / ससुराको नाम</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="naam"></td>
+                                    <td class="text-align-left" id="naam2"></td>
+                                    <td id="naam3"></td>
+                                    <td id="naam4"></td>
+                                    <td id="naam5"></td>
+                                    <td id="naam6"></td>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div style="padding-right: 20px; float: right; padding-top: 100px;">
+                        <span><b>...................................</b> </span>
+                        <br><span><b>मालपोत अधिकृत</b></span></br>
+                    </div>
+                    <br>
+            
+                </div>
+    </div>
+    
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Preeti';
+  src: url('Preeti.eot');
+  src: url('Preeti.eot?#iefix') format('embedded-opentype'),
+    url('Preeti.woff2') format('woff2'), url('Preeti.woff') format('woff'),
+    url('Preeti.ttf') format('truetype'), url('Preeti.svg#Preeti') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

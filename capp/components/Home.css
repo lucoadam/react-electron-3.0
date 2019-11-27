@@ -1,0 +1,25 @@
+.header {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  height:29vh;
+}
+
+.header img {
+  float: left;
+  padding: 0 20px 20px 0;
+}
+
+.topic{
+  text-align: center;
+  color: white;
+}
+
+.header a {
+  font-size: 1.2rem;
+}
+.subtopic{
+  font-size: 1rem;
+}

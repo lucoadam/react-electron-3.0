@@ -1,0 +1,114 @@
+body {
+    width: 100vw;
+    /*display: flex;*/
+
+}
+.container {
+    width: 700px;
+    height: 100%;
+    border: 2px #242323 solid;
+    padding: 10px;
+    opacity: 1 !important;
+    /*background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><text x="4" y="4" font-size="4" fill="#bf9ef1">[[${municipalName.value}]]</text></svg>');*/
+    /*background-size: 70px 10px;*/
+
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: arial;
+
+}
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+.content {
+    margin-top: 45px;
+}
+.content>div>span {
+    color: #000;
+}	
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: justify;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.row span {
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+.line,
+.line1,
+.line2,
+.line3,
+.line4,
+.line5,
+.line6,
+.line7,
+.line8,
+.line9 {
+    border-bottom: 1px #0a0a0a solid;
+    text-transform: none;
+    color: #000;
+}
+
+.line1 {
+    width: 42%;
+}
+
+.line2 {
+    width: 27.5%;
+}
+
+.line3 {
+    width: 31%;
+}
+
+.line4 {
+    width: 34%
+}
+
+.line5 {
+    width: 27%;
+}
+
+.line6 {
+    width: 51%;
+}
+
+.line7 {
+    width: 38%;
+}
+
+.line8 {
+    width: 25%;
+}
+
+.line9 {
+    width: 40%;
+}
+.heading>span {
+    color: #000;
+}
+.fifth .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fifth .col .line {
+    margin-bottom: 10px;
+}
+
+.fifth .col span {
+    margin-bottom: 5px;
+}

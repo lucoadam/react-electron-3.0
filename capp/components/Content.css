@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'Preeti';
+  src: url('../font/Preeti.eot');
+  src: url('../font/Preeti.eot?#iefix') format('embedded-opentype'),
+    url('../font/Preeti.woff2') format('woff2'),
+    url('../font/Preeti.woff') format('woff'),
+    url('../font/Preeti.ttf') format('truetype'),
+    url('../font/Preeti.svg#Preeti') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* fallback */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialicons/v48/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+}
+
+.icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+.Drop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(white, grey);
+  margin: auto;
+}
+.maincontainer {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: auto;
+  width: 90%;
+}
+.mainhead {
+  margin-left: 20%;
+}
+.info {
+  /* width:57%; */
+  background-color: rgb(76, 127, 175);
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

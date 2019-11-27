@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)file:///home/luco/Desktop/nepaliunicode/Dakhila.html -->
+<html><head>
+
+    <title>Dakhila</title>
+    <style>
+        * {
+            color: #000000;
+        }
+
+        #formcontent3 {
+            width: 7in;
+            height: 9.25in;
+            margin: 27mm 39mm 27mm 39mm;
+            padding:8px;
+            border: 2px #242323 solid;
+        }
+
+        .print-head {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            text-transform: uppercase;
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+
+        .image,
+        .col-box {
+
+            width: 80px;
+            height: inherit;
+        }
+
+        .image {
+            margin-left: -166px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .col-box {
+            border: 1px #000000 solid;
+        }
+
+        .print-content {
+            margin-top: 45px;
+        }
+
+        .print-row {
+            display: flex;
+            flex-direction: row;
+            text-align: justify;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+            font-weight: 600;
+        }
+
+        .print-row span {
+            font-size: 0.8em;
+            text-transform: uppercase;
+        }
+
+        .line,
+        .line1,
+        .line2,
+        .line3,
+        .line4,
+        .line5,
+        .line6,
+        .line7,
+        .line8,
+        .line9 {
+            border-bottom: 1px #0a0a0a solid;
+            text-transform: none;
+            color: #000;
+        }
+
+        .line1 {
+            width: 73%;
+        }
+
+        .line2 {
+            width: 27.5%;
+        }
+
+        .line3 {
+            width: 31%;
+        }
+
+        .line4 {
+            width: 38%
+        }
+
+        .line5 {
+            width: 36%;
+        }
+
+        .line6 {
+            width: 59%;
+        }
+
+        .line7 {
+            width: 51%;
+        }
+
+        .line8 {
+            width: 25%;
+        }
+
+        .line9 {
+            width: 40%;
+        }
+
+        .third {
+            width: 100%;
+            height: 430px;
+        }
+
+        .fourth {
+            position: relative;
+            left: -2vw;
+            text-align: left;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+
+        .fourth ol li {
+            margin-bottom: 5px;
+        }
+
+        .line {
+            width: 200px;
+            height: 50px;
+        }
+
+        .fifth {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            text-transform: uppercase;
+            font-size: 0.8em;
+            font-weight: bold;
+            margin-top: 93px;
+        }
+
+        .fifth .col {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .fifth .col .line {
+            margin-bottom: 10px;
+        }
+
+        .fifth .col span {
+            margin-bottom: 5px;
+        }
+
+        .sixth {
+            margin-top: 7px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            text-transform: uppercase;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+
+        .sixth span {
+            padding-bottom: 5px;
+        }
+
+        @font-face {
+            font-family: 'ArialNarprint-row2';
+            src: url('ArialNarprint-row2.ttf');
+        }
+
+        .table {
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .table-bordered {
+            border: 1px solid black;
+        }
+
+        .table>tbody+tbody {
+            border-top: 2px solid black;
+        }
+
+        .table>thead>tr>th,
+        .table>tbody>tr>th,
+        .table>tfoot>tr>th,
+        .table>thead>tr>td,
+        .table>tbody>tr>td,
+        .table>tfoot>tr>td {
+            padding: 15px;
+            /*line-height: 1.42857143;*/
+            vertical-align: top;
+            border-top: 1px solid black;
+        }
+
+        .table>thead>tr>th {
+            vertical-align: bottom;
+            border-bottom: 1px solid black;
+        }
+
+        .table-bordered>thead>tr>th,
+        .table-bordered>tbody>tr>th,
+        .table-bordered>tfoot>tr>th,
+        .table-bordered>thead>tr>td,
+        .table-bordered>tbody>tr>td,
+        .table-bordered>tfoot>tr>td {
+            border: 1px solid black;
+        }
+
+        table {
+            border-spacing: unset;
+        }
+
+        table col[class*="col-"] {
+            position: static;
+            display: table-column;
+            float: none;
+        }
+
+        table td[class*="col-"],
+        table th[class*="col-"] {
+            position: static;
+            display: table-cell;
+            float: none;
+        }
+
+        .table>caption+thead>tr:first-child>th,
+        .table>colgroup+thead>tr:first-child>th,
+        .table>thead:first-child>tr:first-child>th,
+        .table>caption+thead>tr:first-child>td,
+        .table>colgroup+thead>tr:first-child>td,
+        .table>thead:first-child>tr:first-child>td {
+            border-top: 0;
+        }
+
+        .table>tbody+tbody {
+            border-top: 2px solid #ddd;
+        }
+
+        .no-border-top {
+            border-top: unset !important;
+        }
+
+        .table>thead>tr:first-child>th {
+            border-bottom: unset !important;
+        }
+
+        th,
+        td {
+            font-size: 0.9em;
+            ;
+        }
+
+        .text-vertical {
+            text-orientation: mixed;
+            writing-mode: vertical-lr;
+        }
+
+        .text-align-left {
+            text-align: left;
+            padding-left: 2px;
+        }
+
+        /* Second Table */
+        .table1 {
+            width: 100%;
+            max-width: 100%;
+            height: fit-print-content;
+        }
+
+        .table1-bordered {
+            border: 2px solid #000;
+        }
+
+        .table1>thead>tr>th,
+        .table1>tbody>tr>th,
+        .table1>tfoot>tr>th,
+        .table1>thead>tr>td,
+        .table1>tbody>tr>td {
+            border-right: 2px solid #000;
+        }
+
+        .table1>thead>tr>th {
+            vertical-align: bottom;
+            border-bottom: 2px solid #000;
+        }
+
+        .table1-bordered>tbody>tr>th {
+            border: 2px solid #000;
+            /*border-bottom: 1px solid black;*/
+        }
+
+        .table1-bordered>tbody>tr>td {
+            text-align: center;
+            padding-bottom: 5px;
+
+        }
+
+        .table1-bordered>tbody>tr :first-child {
+            padding-left: 0px;
+            text-align: center;
+        }
+
+        .table1-bordered>thead>tr>th,
+        .table1-bordered>thead>tr>td {
+            border-bottom-width: 1px;
+        }
+
+        .table1 {
+            border-spacing: unset;
+        }
+
+
+
+        .table1>caption+thead>tr:first-child>th,
+        .table1>colgroup+thead>tr:first-child>th,
+        .table1>thead:first-child>tr:first-child>th,
+        .table1>caption+thead>tr:first-child>td,
+        .table1>colgroup+thead>tr:first-child>td,
+        .table1>thead:first-child>tr:first-child>td {
+            border-top: 0;
+        }
+
+        .table1>tbody+tbody {
+            border-top: 1px solid #ddd;
+        }
+
+        .no-border-top {
+            border-top: unset !important;
+        }
+
+        .table1>thead>tr:first-child>th {
+            border-bottom: unset !important;
+        }
+
+        th,
+        td {
+            font-size: 0.9em;
+        }
+
+        .table1-bordered>tbody :last-child>td {
+            line-height: 20px;
+        }
+
+        .text-vertical {
+            text-orientation: mixed;
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+            padding-top: 5px;
+            text-align: center;
+            vertical-align: bottom;
+        }
+
+        .text-align-left {
+            text-align: start;
+            padding-left: 0px;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .table1>thead>tr>th,
+        .table1>thead>tr>th>span {
+            font-size: 0.9em;
+        }
+
+        .table1>tbody>tr :last-child,
+        .table1>thead>tr :last-child {
+            border-right: none;
+        }
+
+        .heading>span {
+            color: #000;
+        }
+
+        .print-content>div>span {
+            color: #000;
+        }
+
+        .table1>thead>tr>th>span,
+        .table1>thead>tr>th {
+            color: #000;
+        }
+
+        .table1>tbody>tr>td {
+            text-align: center;
+            border-bottom: 1px solid #000;
+        }
+
+        .table1>tbody>tr :last-child {
+            border-bottom: none;
+        }
+
+        .table1>tbody>tr>td {
+            /* font-size: 12px; */
+            font-size: 0.9em;
+            /* justify-content: center; */
+        }
+
+        /* Second Table End */
+    </style>
+</head>
+
+<body>
+
+        <div id="formcontent3">
+            <div class="print-head">
+                <div class="col image">
+                    <img src="Dakhila_files/logo.svg" style="width: 140%; height: 56%; margin-bottom:80px; margin-left:20px;" alt="logo">
+                </div>
+                <div class="col heading" style="margin-left:-40px;display: flex; flex-direction: column;align-items: center;justify-content: space-between;">
+                    <span>नेपाल सरकार</span>
+                    <span>भूमि व्यवस्था सरकारी तथा गरिवी निवारण मन्त्रलय</span>
+                    <span>भूमि व्यवस्थापन तथा अभिलेख विभाग</span>
+                    <span style="font-size:1.8em;font-family:ArialNarprint-row2;">मालपोत कार्यालय</span>
+                    <span style="font-size:1.4em;font-family:ArialNarprint-row2;">साँखु (काठमाण्डौ)</span>
+                    <br>
+                   
+                    
+                </div>
+            </div>
+            <div style="display:flex;flex-direction:row;justify-content: space-between;" class="date">
+                    <div><span> मिसिल नं. :- <span class="line4" id="misil"></span></span></div>
+                    <div><span> मिति: <span class="line4" id="miti"></span>   </span></div>
+                   
+                </div>
+                <div>
+                        <span style="font-size:1.1em;font-family:ArialNarprint-row2;margin-left:-40px;display: flex; flex-direction: column;align-items: center;justify-content: space-between; margin-top: 30px;">
+                                <u> विषय :- दाखिल खारेज सम्बन्धि टिप्पणि तथा आदेश । </u></span>
+                </div>
+            <div class="print-content" style=" margin-bottom: 40px">
+                <div class="print-row">
+                    <span>बादी / धनी म / हामी </span>
+                    <span class="line1" id="hami"></span> 
+                    <span> ऋणी / प्रतिबादी 
+                    <span class="line2" id="pratibadi"></span> </span>
+                </div>
+                <div class="print-row">
+                    <span> भएको र.नं. / चलान पुर्जी नं.</span>
+                    <span class="line4" id="chalan"></span> <span>मिति</span><span class="line5" id="miti2"></span>
+                    <span>को </span>
+                </div>
+                <div class="print-row">
+                    <span>मा.पो.का </span> <span class="line6" id="ma"></span> <span>अदालतको पारित लिखित / फैसला बमोजिम मेरो /
+                    </span>
+
+                </div>
+                <div class="print-row">
+                    <span>हाम्रो नाममा दाखिल खारेज गरी पाउँ संलग्न प्रमाण साथको द.नं. </span><span class="line7" id="darta"></span>
+                    <span> मिति</span>
+                </div>
+                <div class="print-row">
+                    <span class="line9" id="miti3"></span>
+                    <span> को निवेदन ।</span>
+                </div>
+            </div>
+            <div class="third">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>वादी निवेदकको नाम, थर, वतन (वारेस भए निजको समेत)</th>
+                            <th>पिता वा पति</th>
+                            <th>बाजे</th>
+                            <th>कैफियत</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr th:each="shs: ${student.sortedSHS()}">
+                            <td id="naam"></td>
+                            <td class="text-align-left" id="naam2"></td>
+                            <td id="naam3"></td>
+                            <td id="naam4"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                        <table class="table1 table1-bordered">
+                            <thead>
+                                <tr>
+                                    <th><span class="">ऋणी / प्रतिबादीको नाम, थर, वतन </span></th>
+
+                                    <th colspan="4" style="vertical-align: middle;"><span>दा. खा हुने जग्गा </span></th>
+                                    <th colspan="3" style="vertical-align: middle;">कि.का भै आएको बादीलाई जाने</th>
+                                    <th colspan="2" style="vertical-align: middle;"><span>प्रतिवादीको बाँकीमा रहने </span></th>
+
+                                </tr>
+                                <tr>
+                                    <th class="no-border-top"></th>
+                                    <th style="border-top: 1px solid #151B54;">गा.वि.स.</th>
+                                    <th style="border-top: 1px solid #151B54;">वा.नं.</th>
+                                    <th style="border-top: 1px solid #151B54;">कि.नं.</th>
+                                    <th style="border-top: 1px solid #151B54;">तर्फ </th>
+                                    
+
+                                    <th style="border-top: 1px solid #151B54;"> कि. नं. </th>
+                                    <th style="border-top: 1px solid #151B54;"> क्षेत्रफल</th>
+                                    <th style="border-top: 1px solid #151B54;">तर्फ</th>
+                                    
+                                    <th style="border-top: 1px solid #151B54;">कि. नं.</th>
+                                    <th style="border-top: 1px solid #151B54;"> क्षेत्रफल</th>
+                                </tr>
+                            </thead>
+                            <tbody style="border-left: 1px solid #151B54;height: 45px;">
+                                <tr>
+                                    <td id="naam5" style="
+    height: 20px;
+"></td>
+                                    <td id="gawisa"> </td>
+                                    <td id="wana"></td>
+                                    <td id="kina"></td>
+                                    <td id="tarfa"></td>
+                                        <td id="kina2"></td>
+                                        <td id="chhetrafal"></td>
+                                        <td id="tarfa2"></td>
+                                        <td id="kina3"></td>
+                                        <td id="chhetrafal2"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+            </div>
+
+            
+            <p style="page-break-after: always"><span></span></p>
+        </div>
+   
+    
+
+
+</body></html>
